@@ -1,0 +1,88 @@
+/* Reset de margens e preenchimento padrão para o body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para todos os títulos h2 */
+h2 {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para seções gerais */
+section {
+    margin: 0;
+    padding: 40px;
+}
+
+/* Seção 1 - Title */
+#title {
+    background-color: #344966;
+    padding: 40px;
+}
+
+#title_text1 {
+    color: #E9F1F7;
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#separator1 {
+    margin: 50px;
+}
+
+#about_text {
+    border: solid 3px #E9F1F7;
+    color: #E9F1F7;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    padding: 20px;
+}
+
+/* Seção 2 - About */
+#about {
+    background-color: #E9F1F7;
+    padding: 30px;
+    text-align: center;
+}
+
+#about_text1 {
+    color: #344966;
+    margin: 0;
+}
+
+#about_text2 {
+    color: #344966;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Seção 3 - Projects */
+#projects {
+    background-color: #344966;
+    padding: 40px;
+}
+
+#project_title {
+    color: #E9F1F7;
+    text-align: center;
+}
+
+/* Seção 4 - Contact */
+#contact {
+    padding: 40px;
+    background-color: #E9F1F7;
+}
+#contact_text1{
+    text-align: center;
+    color: #344966;
+}
