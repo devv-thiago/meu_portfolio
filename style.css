@@ -2,87 +2,132 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Kanit', sans-serif;
 }
 
-/* Estilo para todos os títulos h2 */
-h2 {
-    font-family: 'Kanit', sans-serif;
+/* Estilo para todos os títulos h2 e p */
+h2, p {
     margin: 0;
     padding: 0;
 }
-p{
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+.project-link{
+    text-decoration: none;
+    color: #E9F1F7;
+}
+.project-link::after {
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url(assets/arrow.png) no-repeat center;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-10px); /* Inicia ligeiramente deslocado para a esquerda */
+    transition: all .2s ease-in-out;
+}
+
+.project-link:hover::after {
+    opacity: 1; /* Torna visível ao passar o mouse */
+    transform: translateX(0); /* Retorna à posição normal */
 }
 
 /* Estilo para seções gerais */
 section {
-    margin: 0;
-    padding: 40px;
+    padding: 2rem; /* Usando unidades de medida flexíveis */
 }
 
 /* Seção 1 - Title */
 #title {
     background-color: #344966;
-    padding: 40px;
+    padding: 2rem;
+    text-align: left;
 }
 
 #title_text1 {
     color: #E9F1F7;
-    font-size: 45px;
-    font-family: 'Kanit', sans-serif;
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 #separator1 {
-    margin: 50px;
+    margin: 2rem;
 }
 
 #about_text {
     border: solid 3px #E9F1F7;
     color: #E9F1F7;
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    padding: 20px;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 1rem 1rem; /* Ajuste o preenchimento conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 /* Seção 2 - About */
 #about {
     background-color: #E9F1F7;
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
 }
 
-#about_text1 {
+#about_text1{
     color: #344966;
-    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
-
 #about_text2 {
     color: #344966;
-    margin: 0;
-    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 /* Seção 3 - Projects */
 #projects {
     background-color: #344966;
-    padding: 40px;
+    padding: 2rem;
+    text-align: center;
 }
 
 #project_title {
     color: #E9F1F7;
-    text-align: center;
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 /* Seção 4 - Contact */
 #contact {
-    padding: 40px;
+    padding: 2rem;
     background-color: #E9F1F7;
-}
-#contact_text1{
     text-align: center;
+}
+
+#contact_text1{
+    margin-bottom: 1rem;
     color: #344966;
+    font-size: 2rem;
+} 
+#contact_text2, #contact_text3, #contact_text4 {
+    color: #344966;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 1rem; /* Ajuste a margem conforme necessário */
+}
+
+/* Classes específicas para projetos */
+.project-title {
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Ajuste a margem conforme necessário */
+    text-align: left;
+    color: #E9F1F7;
+}
+
+.project-description {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1.5;
+    text-align: justify;
+    color: #d3d5d6;
+}
+.technologies{
+    text-align: left;
+    margin-bottom: 10px;
 }
